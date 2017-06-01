@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DCS Project</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page-wrapper">
+  <h1>DCS Project</h1>
+
+  <div id="status">Connecting...</div>
+  <table style="width:100%">
+    <tr>
+      <th><ul id="distance"></ul>	</th>
+      <th><ul id="accelerometer"></ul>	</th>
+    </tr>
+  </table>
+
+  <form id="message-form" action="#" method="post">
+    <table style="width:100%">
+      <tr>
+        <th></th>
+        <th><button type="button" id="Move_Forward">Forward</button></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td><button type="button" id="Move_Left">Left</button></td>
+        <td><button type="button" id="Stop">STOP</button></td>
+        <td><button type="button" id="Move_Right">Right</button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="button" id="Move_Back">Back</button></td>
+        <td></td>
+      </tr>
+    </table>       
+      <br> <br>
+      <button type="button" id="close">Close Connection</button>
+      <br> <br>
+      
+  </form>
+  <ul id="messages"></ul>    
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
